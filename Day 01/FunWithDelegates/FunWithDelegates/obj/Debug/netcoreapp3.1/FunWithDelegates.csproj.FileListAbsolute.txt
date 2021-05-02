@@ -1,0 +1,13 @@
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\bin\Debug\netcoreapp3.1\FunWithDelegates.exe
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\bin\Debug\netcoreapp3.1\FunWithDelegates.deps.json
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\bin\Debug\netcoreapp3.1\FunWithDelegates.runtimeconfig.json
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\bin\Debug\netcoreapp3.1\FunWithDelegates.runtimeconfig.dev.json
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\bin\Debug\netcoreapp3.1\FunWithDelegates.dll
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\bin\Debug\netcoreapp3.1\FunWithDelegates.pdb
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\obj\Debug\netcoreapp3.1\FunWithDelegates.csprojAssemblyReference.cache
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\obj\Debug\netcoreapp3.1\FunWithDelegates.csproj.CoreCompileInputs.cache
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\obj\Debug\netcoreapp3.1\FunWithDelegates.AssemblyInfoInputs.cache
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\obj\Debug\netcoreapp3.1\FunWithDelegates.AssemblyInfo.cs
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\obj\Debug\netcoreapp3.1\FunWithDelegates.dll
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\obj\Debug\netcoreapp3.1\FunWithDelegates.pdb
+C:\Projects\Course-2105-Public\Day 01\FunWithDelegates\FunWithDelegates\obj\Debug\netcoreapp3.1\FunWithDelegates.genruntimeconfig.cache
