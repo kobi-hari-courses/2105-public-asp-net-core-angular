@@ -1,0 +1,13 @@
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\bin\Debug\netcoreapp3.1\FunWithGenerics.exe
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\bin\Debug\netcoreapp3.1\FunWithGenerics.deps.json
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\bin\Debug\netcoreapp3.1\FunWithGenerics.runtimeconfig.json
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\bin\Debug\netcoreapp3.1\FunWithGenerics.runtimeconfig.dev.json
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\bin\Debug\netcoreapp3.1\FunWithGenerics.dll
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\bin\Debug\netcoreapp3.1\FunWithGenerics.pdb
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\obj\Debug\netcoreapp3.1\FunWithGenerics.csprojAssemblyReference.cache
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\obj\Debug\netcoreapp3.1\FunWithGenerics.csproj.CoreCompileInputs.cache
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\obj\Debug\netcoreapp3.1\FunWithGenerics.AssemblyInfoInputs.cache
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\obj\Debug\netcoreapp3.1\FunWithGenerics.AssemblyInfo.cs
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\obj\Debug\netcoreapp3.1\FunWithGenerics.dll
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\obj\Debug\netcoreapp3.1\FunWithGenerics.pdb
+C:\Projects\Course-2105-Public\Day 01\FunWithGenerics\FunWithGenerics\obj\Debug\netcoreapp3.1\FunWithGenerics.genruntimeconfig.cache
