@@ -49,6 +49,9 @@ namespace FunWithGenerics
             var smallestNumber = CollectionHelper.TheSmallestItemOf(numbers);
             // var smallestColor = CollectionHelper.TheSmallestItemOf<Color>(colors);
             var onePerson = CollectionHelper.TheSmallestItemOf(people);
+
+
+
         }
     }
 }
