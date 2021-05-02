@@ -1,0 +1,13 @@
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\bin\Debug\netcoreapp3.1\Exercise1Solution.exe
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\bin\Debug\netcoreapp3.1\Exercise1Solution.deps.json
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\bin\Debug\netcoreapp3.1\Exercise1Solution.runtimeconfig.json
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\bin\Debug\netcoreapp3.1\Exercise1Solution.runtimeconfig.dev.json
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\bin\Debug\netcoreapp3.1\Exercise1Solution.dll
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\bin\Debug\netcoreapp3.1\Exercise1Solution.pdb
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\obj\Debug\netcoreapp3.1\Exercise1Solution.csprojAssemblyReference.cache
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\obj\Debug\netcoreapp3.1\Exercise1Solution.csproj.CoreCompileInputs.cache
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\obj\Debug\netcoreapp3.1\Exercise1Solution.AssemblyInfoInputs.cache
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\obj\Debug\netcoreapp3.1\Exercise1Solution.AssemblyInfo.cs
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\obj\Debug\netcoreapp3.1\Exercise1Solution.dll
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\obj\Debug\netcoreapp3.1\Exercise1Solution.pdb
+C:\Projects\Course-2105-Public\Day 01\Exercise1Solution\Exercise1Solution\obj\Debug\netcoreapp3.1\Exercise1Solution.genruntimeconfig.cache
