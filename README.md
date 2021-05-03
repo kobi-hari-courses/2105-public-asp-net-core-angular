@@ -12,6 +12,7 @@ and also - through `Whatsapp`
 * LINQ
 
 # Daily Summaries
+* [Day 01 - Generics and Delegates](https://github.com/kobi2294/Course-2105-Public/wiki/Day-01-Generics-and-Delegates)
 * [Day 02 - Enumerables and Extension methods](https://github.com/kobi2294/Course-2105-Public/wiki/Day-02---Enumerables-and-Extension-methods)
 
 ## Class Exercises
