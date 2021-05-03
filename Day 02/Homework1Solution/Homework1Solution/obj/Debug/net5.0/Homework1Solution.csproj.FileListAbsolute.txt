@@ -1,0 +1,16 @@
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\bin\Debug\net5.0\Homework1Solution.exe
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\bin\Debug\net5.0\Homework1Solution.deps.json
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\bin\Debug\net5.0\Homework1Solution.runtimeconfig.json
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\bin\Debug\net5.0\Homework1Solution.runtimeconfig.dev.json
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\bin\Debug\net5.0\Homework1Solution.dll
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\bin\Debug\net5.0\ref\Homework1Solution.dll
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\bin\Debug\net5.0\Homework1Solution.pdb
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\obj\Debug\net5.0\Homework1Solution.csprojAssemblyReference.cache
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\obj\Debug\net5.0\Homework1Solution.GeneratedMSBuildEditorConfig.editorconfig
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\obj\Debug\net5.0\Homework1Solution.AssemblyInfoInputs.cache
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\obj\Debug\net5.0\Homework1Solution.AssemblyInfo.cs
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\obj\Debug\net5.0\Homework1Solution.csproj.CoreCompileInputs.cache
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\obj\Debug\net5.0\Homework1Solution.dll
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\obj\Debug\net5.0\ref\Homework1Solution.dll
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\obj\Debug\net5.0\Homework1Solution.pdb
+C:\Courses\Course-2105-Public\Day 02\Homework1Solution\Homework1Solution\obj\Debug\net5.0\Homework1Solution.genruntimeconfig.cache
