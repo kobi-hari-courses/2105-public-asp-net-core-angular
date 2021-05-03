@@ -1,0 +1,13 @@
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\bin\Debug\netcoreapp3.1\FunWithExtMethods.exe
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\bin\Debug\netcoreapp3.1\FunWithExtMethods.deps.json
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\bin\Debug\netcoreapp3.1\FunWithExtMethods.runtimeconfig.json
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\bin\Debug\netcoreapp3.1\FunWithExtMethods.runtimeconfig.dev.json
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\bin\Debug\netcoreapp3.1\FunWithExtMethods.dll
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\bin\Debug\netcoreapp3.1\FunWithExtMethods.pdb
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\obj\Debug\netcoreapp3.1\FunWithExtMethods.csprojAssemblyReference.cache
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\obj\Debug\netcoreapp3.1\FunWithExtMethods.csproj.CoreCompileInputs.cache
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\obj\Debug\netcoreapp3.1\FunWithExtMethods.AssemblyInfoInputs.cache
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\obj\Debug\netcoreapp3.1\FunWithExtMethods.AssemblyInfo.cs
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\obj\Debug\netcoreapp3.1\FunWithExtMethods.dll
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\obj\Debug\netcoreapp3.1\FunWithExtMethods.pdb
+C:\Projects\Course-2105-Public\Day 02\FunWithExtMethods\FunWithExtMethods\obj\Debug\netcoreapp3.1\FunWithExtMethods.genruntimeconfig.cache
