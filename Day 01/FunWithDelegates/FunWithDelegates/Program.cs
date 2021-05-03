@@ -14,7 +14,7 @@ namespace FunWithDelegates
             return a * 2;
         }
 
-        static void Main(string[] args)
+        public static void BasicFunWithDelegates()
         {
             var something = new Something();
 
@@ -48,6 +48,47 @@ namespace FunWithDelegates
 
             f1.Invoke(12);
             Console.WriteLine(funckyFunc(15));
+        }
+
+        private static void DoSomethingWithNumber(Action<int> callback)
+        {
+            callback(42);
+        }
+
+        public static void FunWithMulticastDelegate()
+        {
+            Action<int> callback = i =>
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine($"The number is {i}");
+            };
+
+            callback += i =>
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"I received the number {i} now");
+            };
+
+            DoSomethingWithNumber(callback);
+        }
+
+        public static void DemoOfObserverPattern()
+        {
+            var p = new Printer();
+
+            var admin = new Admin(p);
+            var logger = new Logger(p);
+
+            p.Print(new string[] { "Hello", "World" });
+
+            admin.Disconnect();
+
+            p.Print(new string[] { "Hi" });
+        }
+
+        static void Main(string[] args)
+        {
+            DemoOfObserverPattern();
         }
 
         public static void MetodatEzer()
