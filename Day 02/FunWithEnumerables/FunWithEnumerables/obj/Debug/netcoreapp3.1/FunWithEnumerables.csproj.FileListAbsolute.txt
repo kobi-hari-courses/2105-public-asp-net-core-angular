@@ -1,0 +1,13 @@
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\bin\Debug\netcoreapp3.1\FunWithEnumerables.exe
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\bin\Debug\netcoreapp3.1\FunWithEnumerables.deps.json
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\bin\Debug\netcoreapp3.1\FunWithEnumerables.runtimeconfig.json
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\bin\Debug\netcoreapp3.1\FunWithEnumerables.runtimeconfig.dev.json
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\bin\Debug\netcoreapp3.1\FunWithEnumerables.dll
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\bin\Debug\netcoreapp3.1\FunWithEnumerables.pdb
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\obj\Debug\netcoreapp3.1\FunWithEnumerables.csprojAssemblyReference.cache
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\obj\Debug\netcoreapp3.1\FunWithEnumerables.csproj.CoreCompileInputs.cache
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\obj\Debug\netcoreapp3.1\FunWithEnumerables.AssemblyInfoInputs.cache
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\obj\Debug\netcoreapp3.1\FunWithEnumerables.AssemblyInfo.cs
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\obj\Debug\netcoreapp3.1\FunWithEnumerables.dll
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\obj\Debug\netcoreapp3.1\FunWithEnumerables.pdb
+C:\Projects\Course-2105-Public\Day 02\FunWithEnumerables\FunWithEnumerables\obj\Debug\netcoreapp3.1\FunWithEnumerables.genruntimeconfig.cache
