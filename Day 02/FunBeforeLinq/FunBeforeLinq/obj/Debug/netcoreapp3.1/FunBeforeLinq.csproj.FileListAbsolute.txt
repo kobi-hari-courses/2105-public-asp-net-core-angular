@@ -1,0 +1,13 @@
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\bin\Debug\netcoreapp3.1\FunBeforeLinq.exe
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\bin\Debug\netcoreapp3.1\FunBeforeLinq.deps.json
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\bin\Debug\netcoreapp3.1\FunBeforeLinq.runtimeconfig.json
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\bin\Debug\netcoreapp3.1\FunBeforeLinq.runtimeconfig.dev.json
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\bin\Debug\netcoreapp3.1\FunBeforeLinq.dll
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\bin\Debug\netcoreapp3.1\FunBeforeLinq.pdb
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\obj\Debug\netcoreapp3.1\FunBeforeLinq.csprojAssemblyReference.cache
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\obj\Debug\netcoreapp3.1\FunBeforeLinq.csproj.CoreCompileInputs.cache
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\obj\Debug\netcoreapp3.1\FunBeforeLinq.AssemblyInfoInputs.cache
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\obj\Debug\netcoreapp3.1\FunBeforeLinq.AssemblyInfo.cs
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\obj\Debug\netcoreapp3.1\FunBeforeLinq.dll
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\obj\Debug\netcoreapp3.1\FunBeforeLinq.pdb
+C:\Projects\Course-2105-Public\Day 02\FunBeforeLinq\FunBeforeLinq\obj\Debug\netcoreapp3.1\FunBeforeLinq.genruntimeconfig.cache
