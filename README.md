@@ -17,3 +17,6 @@ and also - through `Whatsapp`
 ## Class Exercises
 - [Exercise 1: Generics](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-1---Generics)
 - [Exercise 2: Enumerables](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-2-Enumerables)
+
+## Home work
+- [Homework 1: Just before LINQ](https://github.com/kobi2294/Course-2105-Public/wiki/Homework-1---Before-LINQ)
