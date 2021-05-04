@@ -21,10 +21,10 @@ namespace IntroductionToLinq.Exercise3
 
             // Find all the product groups in which the number of products is larger than 11
             // and the category starts with the letter C.
-
-            // This is incorrect. Replace the right side with the correct query
-
-            var productGroups = new[] { ("", 5) };
+            var productGroups = products
+                .GroupBy(p => p.Category)
+                .Select(g => (Category: g.Key, Products: g.Count()))
+                .Where(c => c.Products > 11 && c.Category.StartsWith("C"));
 
             var expected = new[]
             {
