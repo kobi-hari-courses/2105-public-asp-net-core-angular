@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroductionToLinq", "IntroductionToLinq\IntroductionToLinq.csproj", "{00F37751-74F2-4D61-9E60-C4BE4345CFB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercises", "Exercises\Exercises.csproj", "{07E5CC2D-2FE0-4D71-A1D4-B24B9ADAD391}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00F37751-74F2-4D61-9E60-C4BE4345CFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F37751-74F2-4D61-9E60-C4BE4345CFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F37751-74F2-4D61-9E60-C4BE4345CFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F37751-74F2-4D61-9E60-C4BE4345CFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07E5CC2D-2FE0-4D71-A1D4-B24B9ADAD391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07E5CC2D-2FE0-4D71-A1D4-B24B9ADAD391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07E5CC2D-2FE0-4D71-A1D4-B24B9ADAD391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07E5CC2D-2FE0-4D71-A1D4-B24B9ADAD391}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34DE1112-4B89-4AFA-9878-10BA4B3D8043}
+	EndGlobalSection
+EndGlobal
