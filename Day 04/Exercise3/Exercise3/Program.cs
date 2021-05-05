@@ -10,6 +10,7 @@ namespace Exercise3
         {
             Question1();
             Question2();
+            Question3();
         }
 
         public static void Question1()
@@ -39,8 +40,18 @@ namespace Exercise3
             {
                 Console.WriteLine($"{item.name}, {(int)item.age.TotalDays/365}");
             }
-                
+        }
 
+        public static void Question3()
+        {
+            var source = "4:12,2:43,3:51,4:29,3:24,3:14,4:46,3:25,4:52,3:27";
+
+            var res = source.Split(',')
+                .Select(txt => TimeSpan.Parse($"00:{txt}"))
+                .Aggregate((time1, time2) => time1 + time2);
+
+            Console.WriteLine("Question 3");
+            Console.WriteLine($"{res.Minutes} minutes and {res.Seconds} seconds");
         }
     }
 }
