@@ -11,6 +11,7 @@ namespace Exercise3
             Question1();
             Question2();
             Question3();
+            Question4();
         }
 
         public static void Question1()
@@ -53,5 +54,18 @@ namespace Exercise3
             Console.WriteLine("Question 3");
             Console.WriteLine($"{res.Minutes} minutes and {res.Seconds} seconds");
         }
+
+        public static void Question4()
+        {
+            var pairs = Enumerable.Range(0, 3)
+                .SelectMany(x => Enumerable.Range(0, 3).Select(y => (x: x, y: y)))
+                .Select(pair => $"[{pair.x}, {pair.y}]");
+
+            var res = string.Join(", ", pairs);
+            Console.WriteLine("Question 4");
+            Console.WriteLine(res);
+        }
+
+
     }
 }
