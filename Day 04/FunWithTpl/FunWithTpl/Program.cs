@@ -22,8 +22,6 @@ namespace FunWithTpl
             Console.WriteLine($"And it took {s.ElapsedMilliseconds} milliseconds to calcualte it");
 
             Console.WriteLine(string.Join(", ", primes.Take(30)));
-
-
         }
     }
 }
