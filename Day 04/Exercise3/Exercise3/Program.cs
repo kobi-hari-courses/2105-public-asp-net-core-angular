@@ -12,7 +12,7 @@ namespace Exercise3
             Question2();
             Question3();
             Question4();
-            Question5();
+            Question5_BAD();
         }
 
         public static void Question1()
@@ -67,7 +67,7 @@ namespace Exercise3
             Console.WriteLine(res);
         }
 
-        public static void Question5()
+        public static void Question5_BAD()
         {
             // what is wrong with this solution?
 
@@ -84,6 +84,19 @@ namespace Exercise3
             Console.WriteLine("Question 5");
             Console.WriteLine(string.Join(", ", res));
         }
+
+        public static void Question5()
+        {
+            var source = "00:45,01:32,02:18,03:01,03:44,04:31,05:19,06:01,06:47,07:35";
+            var res = $"00:00,{source}"
+                .Split(',')
+                .Select(str => TimeSpan.Parse($"00:{str.Trim()}"))
+                .Window(2)
+                .Select(pair => pair[1] - pair[0]);
+
+        }
+
+
 
 
     }
