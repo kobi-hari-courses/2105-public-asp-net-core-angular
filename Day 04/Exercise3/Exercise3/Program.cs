@@ -69,7 +69,20 @@ namespace Exercise3
 
         public static void Question5()
         {
+            // what is wrong with this solution?
 
+            var source = "00:45,01:32,02:18,03:01,03:44,04:31,05:19,06:01,06:47,07:35";
+
+            var times = $"00:00, {source}"
+                .Split(',')
+                .Select(str => TimeSpan.Parse($"00:{str.Trim()}"));
+
+            var res = times
+                .Zip(times.Skip(1))
+                .Select(pair => pair.Second - pair.First);
+
+            Console.WriteLine("Question 5");
+            Console.WriteLine(string.Join(", ", res));
         }
 
 
