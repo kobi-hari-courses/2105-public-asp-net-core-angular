@@ -12,6 +12,7 @@ namespace Exercise3
             Question2();
             Question3();
             Question4();
+            Question5();
         }
 
         public static void Question1()
@@ -64,6 +65,11 @@ namespace Exercise3
             var res = string.Join(", ", pairs);
             Console.WriteLine("Question 4");
             Console.WriteLine(res);
+        }
+
+        public static void Question5()
+        {
+
         }
 
 
