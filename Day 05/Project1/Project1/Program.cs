@@ -95,6 +95,17 @@ namespace Project1
 
         public static void NumberOfCarsPerManufacturer()
         {
+            var all = DataReader
+                .GetAllCars()
+                .GroupBy(car => car.Make)
+                .Select(group => (name: group.Key, count: group.Count()));
+
+            foreach (var item in all)
+            {
+                Print($"{item.name,-35} {item.count}", ConsoleColor.Cyan);
+            }
+                
+
         }
 
         public static void ListBestCarsOfManufacturers()
