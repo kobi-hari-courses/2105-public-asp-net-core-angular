@@ -40,6 +40,7 @@ namespace Project1Solution
                 }
             }
         }
+
         private static void ListAllManufacturers()
         {
             var all = Api.GetAllManufacturers();
@@ -99,6 +100,12 @@ namespace Project1Solution
 
         private static void ListGeneralHighlights()
         {
+            $"Car with lowest combined FE: {Api.GetCarWithLowestCombinedFe().Make}".Print();
+            $"Average City Fe: {Api.GetAvaerageCityFe()}".Print();
+            $"Number of different countries: {Api.GetNumberOfCounter()}".Print();
+
+            var mfgWithHighAvg = Api.GetManufacturerWithHighestAverageCombinedFe();
+            $"Manufacturer with highest average combined FE {mfgWithHighAvg.name} {mfgWithHighAvg.avg}".Print();
         }
 
 

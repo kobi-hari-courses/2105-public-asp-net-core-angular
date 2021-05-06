@@ -57,22 +57,32 @@ namespace Project1Solution
 
         public static Car GetCarWithLowestCombinedFe()
         {
-            throw new NotImplementedException();
+            // TODO: Use aggrtegate to imrove from O(N log(N)) to O(N)
+            return DataReader
+                .GetAllCars()
+                .OrderBy(car => car.CombinedFe)
+                .First();
         }
 
         public static double GetAvaerageCityFe()
         {
-            throw new NotImplementedException();
+            return DataReader
+                .GetAllCars()
+                .Average(car => car.CityFe);
         }
 
         public static int GetNumberOfCounter()
         {
-            throw new NotImplementedException();
+            return Api.GetAllCountries().Count();
         }
 
-        public static string GetManufacturerWithHighestAverageCombinedFe()
+        public static (string name, double avg) GetManufacturerWithHighestAverageCombinedFe()
         {
-            throw new NotImplementedException();
+            return DataReader.GetAllCars()
+                .GroupBy(car => car.Make)
+                .Select(group => (name: group.Key, avg: group.Average(car => car.CombinedFe)))
+                .OrderByDescending(tuple => tuple.avg)
+                .First();
         }
     }
 }
