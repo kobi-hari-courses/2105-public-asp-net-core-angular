@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Project1
 {
@@ -49,6 +50,15 @@ namespace Project1
 
         public static void ListAllManufacturers()
         {
+            var all = DataReader
+                .GetAllManufacturers()
+                .OrderBy(m => m.Name);
+
+                                ;
+            foreach (var item in all)
+            {
+                Print($"{item.Name,-35} {item.Year,-5} {item.Country}" ,ConsoleColor.Cyan);
+            }
         }
 
         public static void ListVehiclesOfManufactureres()
