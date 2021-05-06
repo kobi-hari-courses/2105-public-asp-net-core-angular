@@ -6,72 +6,14 @@ namespace Project1
 {
     class Program
     {
-        public static void Print(string str, ConsoleColor color)
+        static List<string> _mainMenu = new List<string> 
         {
-            var tmp = Console.ForegroundColor;
-            Console.ForegroundColor = color;
-            Console.WriteLine(str);
-            Console.ForegroundColor = tmp;
-        }
-
-        public static int PrintMainMenu()
-        {
-            Print("Please Select an option:", ConsoleColor.Green);
-            Print("1. List All Manufacturers", ConsoleColor.Yellow);
-            Print("2. List Vehicles of Manufacturer", ConsoleColor.Yellow);
-            Print("3. List Number of cars per Manufacturer", ConsoleColor.Yellow);
-            Print("4. List Best cars of each Manufacturer", ConsoleColor.Yellow);
-            Print("5. List General highlights", ConsoleColor.Yellow);
-
-            return 5;
-        }
-
-        public static int GetUserSelectionFromMenu(Func<int> menu)
-        {
-            var max = menu();
-
-            while (true)
-            {
-                var choice = Console.ReadLine();
-                if (int.TryParse(choice, out var option))
-                {
-                    if ((option >0) && (option <= max))
-                    {
-                        return option;
-                    }
-
-                    Print($"Please select an option between 1 and {max}", ConsoleColor.Red);
-                }
-                else
-                {
-                    Print("Please enter a number", ConsoleColor.Red);
-                }
-            }
-        }
-
-        public static string GetUserSelectionFromStrings(IEnumerable<string> options)
-        {
-            var all = options
-                .OrderBy(m => m)
-                .Select((m, index) => (name: m, index: index))
-                .ToList();
-
-            Func<int> menu = () =>
-            {
-                Print("Please select: ", ConsoleColor.Green);
-                foreach (var item in all)
-                {
-                    Print($"{item.index + 1} {item.name}", ConsoleColor.Yellow);
-                }
-
-                return all.Count;
-            };
-
-            var option = GetUserSelectionFromMenu(menu);
-            var selected = all[option - 1].name;
-
-            return selected;
-        }
+             "List All Manufacturers",
+             "List Vehicles of Manufacturer",
+             "List Number of cars per Manufacturer",
+             "List Best cars of each Manufacturer",
+             "List General highlights"
+        };
 
         public static void ListAllManufacturers()
         {
@@ -82,7 +24,7 @@ namespace Project1
                                 ;
             foreach (var item in all)
             {
-                Print($"{item.Name,-35} {item.Year,-5} {item.Country}" ,ConsoleColor.Cyan);
+                $"{item.Name,-35} {item.Year,-5} {item.Country}".Print(ConsoleColor.Cyan);
             }
         }
 
@@ -93,16 +35,16 @@ namespace Project1
                 .OrderBy(m => m.Name)
                 .Select(m => m.Name);
 
-            var selected = GetUserSelectionFromStrings(manufacturers);
+            var selected = manufacturers.GetUserSelection();
 
             var cars = DataReader.GetAllCars()
-                .Where(car => car.Make == selected)
+                .Where(car => car.Make == selected.option)
                 .OrderBy(car => car.Model)
                 .ThenBy(car => car.Cylinders);
 
             foreach (var car in cars)
             {
-                Print($"{car.Make,-30} {car.Model,-30} {car.Cylinders}", ConsoleColor.Cyan);
+                $"{car.Make,-30} {car.Model,-30} {car.Cylinders}".Print(ConsoleColor.Cyan);
             }
         }
 
@@ -115,7 +57,7 @@ namespace Project1
 
             foreach (var item in all)
             {
-                Print($"{item.name,-35} {item.count}", ConsoleColor.Cyan);
+                $"{item.name,-35} {item.count}".Print(ConsoleColor.Cyan);
             }
         }
 
@@ -126,11 +68,11 @@ namespace Project1
                 .Select(m => m.Country)
                 .Distinct();
 
-            var selected = GetUserSelectionFromStrings(countries);
+            var selected = countries.GetUserSelection();
 
             var manufactuers = DataReader
                 .GetAllManufacturers()
-                .Where(m => m.Country == selected)
+                .Where(m => m.Country == selected.option)
                 .Select(m => m.Name)
                 .ToHashSet();
 
@@ -145,10 +87,10 @@ namespace Project1
 
             foreach (var group in carGroups)
             {
-                Print(group.make, ConsoleColor.Cyan);
+                group.make.Print(ConsoleColor.Cyan);
                 foreach (var car in group.cars)
                 {
-                    Print($"{car.Model,-30} {car.Year,-5} {car.CombinedFe}", ConsoleColor.White);
+                    $"{car.Model,-30} {car.Year,-5} {car.CombinedFe}".Print(ConsoleColor.White);
                 }
             }
 
