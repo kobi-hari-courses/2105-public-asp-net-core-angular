@@ -14,10 +14,11 @@ namespace Project1Solution
             Console.WriteLine(str);
         }
 
-        public static (int index, string option) GetUserSelection(this IEnumerable<string> options)
+        public static (int index, string option) GetUserSelection(this IEnumerable<string> options, bool sort = true)
         {
+            if (sort) options = options.OrderBy(m => m);
+
             var all = options
-                .OrderBy(m => m)
                 .Select((option, index) => (option, index))
                 .ToList();
 

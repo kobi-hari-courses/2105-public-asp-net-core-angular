@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Project1Solution
 {
@@ -18,7 +19,7 @@ namespace Project1Solution
         {
             while(true)
             {
-                var option = _mainMenu.GetUserSelection();
+                var option = _mainMenu.GetUserSelection(false);
                 switch(option.index)
                 {
                     case 1:
@@ -41,28 +42,65 @@ namespace Project1Solution
         }
         private static void ListAllManufacturers()
         {
-            throw new NotImplementedException();
-        }
+            var all = Api.GetAllManufacturers();
 
-
-        private static void ListGeneralHighlights()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void ListBestCarsOfManufacturers()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void ListNumberOfCarsPErManufacturer()
-        {
-            throw new NotImplementedException();
+            foreach (var item in all)
+            {
+                $"{item.Name,-35} {item.Year,-5} {item.Country}".Print(ConsoleColor.Cyan);
+            }
         }
 
         private static void ListCarsOfManufacturer()
         {
-            throw new NotImplementedException();
+            var manfuacturers = Api
+                .GetAllManufacturers()
+                .Select(m => m.Name);
+
+            var selected = manfuacturers.GetUserSelection();
+
+            var cars = Api.GetCarsOfManufacturer(selected.option);
+
+            foreach (var car in cars)
+            {
+                $"{car.Make,-30} {car.Model,-30} {car.Cylinders}".Print(ConsoleColor.Cyan);
+            }
         }
+
+
+        private static void ListNumberOfCarsPErManufacturer()
+        {
+            var res = Api.GetManufacturerNumberOfCars();
+
+            foreach (var item in res)
+            {
+                $"{item.manufacturer,-35} {item.numberOfCars}".Print(ConsoleColor.Cyan);
+            }
+        }
+
+
+        private static void ListBestCarsOfManufacturers()
+        {
+            var countries = Api.GetAllCountries();
+
+            var selected = countries.GetUserSelection();
+
+            var carGroups = Api.GetBestCarsOfManufacturersFrom(selected.option);
+
+            foreach (var group in carGroups)
+            {
+                group.make.Print(ConsoleColor.Cyan);
+
+                foreach (var car in group.cars)
+                {
+                    $"{car.Model,-30} {car.Year,-5}, {car.CombinedFe}".Print();
+                }
+            }
+        }
+
+        private static void ListGeneralHighlights()
+        {
+        }
+
+
     }
 }

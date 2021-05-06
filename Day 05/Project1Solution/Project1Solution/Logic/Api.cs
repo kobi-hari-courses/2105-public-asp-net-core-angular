@@ -18,22 +18,41 @@ namespace Project1Solution
 
         public static IEnumerable<Car> GetCarsOfManufacturer(string manufaturer)
         {
-            throw new NotImplementedException();
+            return DataReader.GetAllCars()
+                .Where(car => car.Make == manufaturer)
+                .OrderBy(car => car.Model)
+                .ThenBy(car => car.Cylinders);
         }
 
         public static IEnumerable<(string manufacturer, int numberOfCars)> GetManufacturerNumberOfCars()
         {
-            throw new NotImplementedException();
+            return DataReader.GetAllCars()
+                .GroupBy(car => car.Make)
+                .Select(group => (manufacturer: group.Key, numberOfCars: group.Count()));
         }
 
         public static IEnumerable<string> GetAllCountries()
         {
-            throw new NotImplementedException();
+            return DataReader.GetAllManufacturers()
+                .Select(m => m.Country)
+                .Distinct();
         }
 
-        public static IEnumerable<IGrouping<string, Car>> GetBestCarsOfManufacturersFrom(string country)
+        public static IEnumerable<(string make, IEnumerable<Car> cars)> GetBestCarsOfManufacturersFrom(string country)
         {
-            throw new NotImplementedException();
+            var manufacturers = DataReader.GetAllManufacturers()
+                .Where(m => m.Country == country)
+                .Select(m => m.Name)
+                .ToHashSet();
+
+            return DataReader.GetAllCars()
+                .Where(car => manufacturers.Contains(car.Make))
+                .GroupBy(car => car.Make)
+                .Select(group => (
+                    make: group.Key, 
+                    cars: group.OrderByDescending(car => car.CombinedFe)
+                               .Take(3))
+                    );
         }
 
         public static Car GetCarWithLowestCombinedFe()
