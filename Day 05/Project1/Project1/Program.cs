@@ -63,6 +63,34 @@ namespace Project1
 
         public static void ListVehiclesOfManufactureres()
         {
+            var manufacturers = DataReader
+                .GetAllManufacturers()
+                .OrderBy(m => m.Name)
+                .Select((m, index) => (name: m.Name, index: index))
+                .ToList();
+
+            Func<int> menu = () =>
+            {
+                Print("Please select a manufacturer: ", ConsoleColor.Green);
+                foreach (var item in manufacturers)
+                {
+                    Print($"{item.index + 1} {item.name}", ConsoleColor.Yellow);
+                }
+                return manufacturers.Count;
+            };
+
+            var option = GetUserSelectionFromMenu(menu);
+            var selected = manufacturers[option - 1].name;
+
+            var cars = DataReader.GetAllCars()
+                .Where(car => car.Make == selected)
+                .OrderBy(car => car.Model)
+                .ThenBy(car => car.Cylinders);
+
+            foreach (var car in cars)
+            {
+                Print($"{car.Make,-30} {car.Model,-30} {car.Cylinders}", ConsoleColor.Cyan);
+            }
         }
 
         public static void NumberOfCarsPerManufacturer()
