@@ -1,0 +1,42 @@
+{
+  "people": [
+    {
+      "id": 1234,
+      "firstName": "Paul",
+      "lastName": "McCartney"
+    },
+    {
+      "id": 1235,
+      "firstName": "John",
+      "lastName": "Lennon"
+    },
+    {
+      "id": 1236,
+      "firstName": "George",
+      "lastName": "Harisson"
+    },
+    {
+      "id": 1237,
+      "firstName": "Ringo",
+      "lastName": "Starr"
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "name": "Green"
+    },
+    {
+      "id": 2,
+      "name": "Blue"
+    },
+    {
+      "id": 3,
+      "name": "Red"
+    },
+    {
+      "id": 4,
+      "name": "Brown"
+    }
+  ]
+}
