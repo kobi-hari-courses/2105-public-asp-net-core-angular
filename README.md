@@ -22,3 +22,6 @@ and also - through `Whatsapp`
 
 ## Home work
 - [Homework 1: Just before LINQ](https://github.com/kobi2294/Course-2105-Public/wiki/Homework-1---Before-LINQ)
+
+## Practice Projects
+- [Project 1: Cars and Manufacturers](https://github.com/kobi2294/Course-2105-Public/wiki/Project-1---Cars-and-Manufacturers)
