@@ -19,6 +19,7 @@ and also - through `Whatsapp`
 - [Exercise 1: Generics](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-1---Generics)
 - [Exercise 2: Enumerables](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-2-Enumerables)
 - [Exercise 3: LINQ](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-3---LINQ)
+- [Exercise 4: Web API](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-4---Web-API)
 
 ## Home work
 - [Homework 1: Just before LINQ](https://github.com/kobi2294/Course-2105-Public/wiki/Homework-1---Before-LINQ)
