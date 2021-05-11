@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetApp", "AspNetApp.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestClientEx", "..\RestClientEx\RestClientEx.csproj", "{A3A78BC3-539C-4333-8C6A-9FAB5D1BD0C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JbtTranslate", "..\JbtTranslate\JbtTranslate.csproj", "{EB6AB2CC-8660-45FE-9C0C-BA5EC4DA3DB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A3A78BC3-539C-4333-8C6A-9FAB5D1BD0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3A78BC3-539C-4333-8C6A-9FAB5D1BD0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3A78BC3-539C-4333-8C6A-9FAB5D1BD0C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6AB2CC-8660-45FE-9C0C-BA5EC4DA3DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6AB2CC-8660-45FE-9C0C-BA5EC4DA3DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6AB2CC-8660-45FE-9C0C-BA5EC4DA3DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6AB2CC-8660-45FE-9C0C-BA5EC4DA3DB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

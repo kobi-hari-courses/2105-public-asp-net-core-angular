@@ -20,6 +20,14 @@ namespace AspNetApp.Controllers
             _productsService = productsService;
         }
 
+
+        [HttpGet("GetOS", Name = nameof(GetOS))]
+        public ActionResult<string> GetOS()
+        {
+            return Ok(Environment.OSVersion);
+        }
+
+
         [HttpGet(Name = nameof(GetAll))]
         public async Task<ActionResult<List<Product>>> GetAll()
         {
