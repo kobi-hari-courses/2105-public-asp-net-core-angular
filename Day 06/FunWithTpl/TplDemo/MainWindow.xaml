@@ -1,0 +1,17 @@
+﻿<Window x:Class="TplDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TplDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+            <Button x:Name="btnGo" FontSize="24" Padding="10" Click="btnGo_Click">Start</Button>
+            <TextBlock x:Name="txtPleaseWait" Visibility="Collapsed">Please Wait...</TextBlock>
+        </StackPanel>
+        <ProgressBar x:Name="progressBar" DockPanel.Dock="Top" Height="20" Margin="4" IsIndeterminate="False"></ProgressBar>
+        <ListBox x:Name="lstResults"></ListBox>
+    </DockPanel>
+</Window>
