@@ -12,7 +12,8 @@ namespace Exercise3
             Question2();
             Question3();
             Question4();
-            Question5_BAD();
+            Question5();
+            Question6();
         }
 
         public static void Question1()
@@ -94,6 +95,25 @@ namespace Exercise3
                 .Window(2)
                 .Select(pair => pair[1] - pair[0]);
 
+            Console.WriteLine("Question 5");
+            Console.WriteLine(string.Join(", ", res));
+        }
+
+        public static void Question6()
+        {
+            var source = "2,5,7 - 10,11,17 - 18";
+            var res = source
+                .Split(",", StringSplitOptions.RemoveEmptyEntries)
+                .Select(str => str
+                                .Split("-", StringSplitOptions.RemoveEmptyEntries)
+                                .Select(s => int.Parse(s))
+                                .ToArray())
+                .SelectMany(items => items.Length == 1
+                                ? Enumerable.Repeat(items[0], 1)
+                                : Enumerable.Range(items[0], items[1] - items[0] + 1));
+
+            Console.WriteLine("Question 5");
+            Console.WriteLine(string.Join(" ", res));
         }
 
 
