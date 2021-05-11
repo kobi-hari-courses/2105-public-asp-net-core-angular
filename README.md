@@ -15,6 +15,7 @@ and also - through `Whatsapp`
 * [Day 01 - Generics and Delegates](https://github.com/kobi2294/Course-2105-Public/wiki/Day-01-Generics-and-Delegates)
 * [Day 02 - Enumerables and Extension methods](https://github.com/kobi2294/Course-2105-Public/wiki/Day-02---Enumerables-and-Extension-methods)
 * [Day 03 - LINQ](https://github.com/kobi2294/Course-2105-Public/wiki/Day-03---LINQ)
+* [Day 04 - LINQ practice and Intro to TPL](https://github.com/kobi2294/Course-2105-Public/wiki/Day-04---LINQ-Practive-and-Intro-to-TPL)
 * [Day 07 - Asp.net & Web API](https://github.com/kobi2294/Course-2105-Public/wiki/Day-07---Asp.net-&-Web-API)
 
 ## Class Exercises
