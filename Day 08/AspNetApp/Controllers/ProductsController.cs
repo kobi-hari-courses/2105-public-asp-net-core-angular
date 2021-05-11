@@ -1,4 +1,5 @@
-﻿using AspNetApp.Models;
+﻿using AspNetApp.Contracts;
+using AspNetApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,31 +13,28 @@ namespace AspNetApp.Controllers
     [Route("[controller]")]
     public class ProductsController : ControllerBase
     {
-        private static List<Product> _products = new List<Product>();
-        private readonly ILogger<ProductsController> _logger;
-        static ProductsController()
-        {
-            for (int i = 1; i <= 10; i++)
-            {
-                _products.Add(new Product(i, $"Product NO.{i}"));
-            }
-        }
+        private readonly IProductsService _productsService;
 
-        public ProductsController(ILogger<ProductsController> logger)
+        public ProductsController(IProductsService productsService)
         {
-            _logger = logger;
+            _productsService = productsService;
         }
 
         [HttpGet(Name = nameof(GetAll))]
-        public ActionResult<List<Product>> GetAll()
+        public async Task<ActionResult<List<Product>>> GetAll()
         {
-            return Ok(_products);
+            // IO : 
+            // 1. db connection
+            // 2. network
+            // 3. read write files
+            var products = await _productsService.GetAll();
+            return Ok(products);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Product> GetProductById(int id)
+        public async Task<ActionResult<Product>> GetProductById(int id)
         {
-            var product = _products.FirstOrDefault(x => x.Id == id);
+            var product = await _productsService.GetItemById(id);
             if (product == null)
             {
                 return NotFound();
@@ -45,37 +43,38 @@ namespace AspNetApp.Controllers
         }
 
         [HttpPost(Name = nameof(AddNewProduct))]
-        public ActionResult<Product> AddNewProduct(Product p)
+        public async Task<ActionResult<Product>> AddNewProduct(Product p)
         {
-            var productToAdd = p with { Id = _products.Max(x=>x.Id) + 1 };
-            _products.Add(productToAdd);
-            return Ok(productToAdd);
+            var newProduct = await _productsService.AddNewProduct(p);
+            return Ok(newProduct);
         }
-      
+
         [HttpPut("{id}", Name = nameof(UpdateProduct))]
-        public ActionResult<Product> UpdateProduct(int id, Product p)
+        public async Task<ActionResult<Product>> UpdateProduct(int id, Product p)
         {
-            var productToUpdate = _products.FirstOrDefault(x => x.Id == id);
-            if(productToUpdate == null)
+            try
+            {
+                var item = await _productsService.UpdateProduct(id, p);
+                return Ok(item);
+            }
+            catch (Exception ex) when (ex.Message.Contains("Missing"))
             {
                 return NotFound();
             }
-            _products.Remove(productToUpdate);
-            Product item = p with { Id = id };
-            _products.Add(item);
-            return Ok(item);
         }
 
         [HttpDelete("{id}", Name = nameof(DeleteProduct))]
-        public ActionResult<Product> DeleteProduct(int id)
+        public async Task<ActionResult<Product>> DeleteProduct(int id)
         {
-            var productToDelete = _products.FirstOrDefault(x => x.Id == id);
-            if (productToDelete == null)
+            try
+            {
+                var item = await _productsService.DeleteProduct(id);
+                return Ok(item);
+            }
+            catch (Exception ex) when (ex.Message.Contains("Missing"))
             {
                 return NotFound();
             }
-            _products.Remove(productToDelete);
-            return Ok(productToDelete);
         }
 
 

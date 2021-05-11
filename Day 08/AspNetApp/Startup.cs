@@ -1,3 +1,5 @@
+using AspNetApp.Contracts;
+using AspNetApp.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -24,9 +26,17 @@ namespace AspNetApp
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        // Dependency injection
         public void ConfigureServices(IServiceCollection services)
         {
+            if(Configuration["useMock"] == "yes")
+            { 
+                services.AddSingleton<IProductsService, MockProductsService>();
+            }
+            //else
+            //{
+            //    services.AddSingleton<IProductsService, RealProductsService>();
+            //}
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
