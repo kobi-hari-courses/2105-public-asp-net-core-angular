@@ -14,6 +14,13 @@ namespace Exercise3
             Question4();
             Question5();
             Question6();
+            Question7();
+            Question8();
+            Question9();
+            Question10();
+            Question11();
+            Question12();
+            Question13();
         }
 
         public static void Question1()
@@ -112,8 +119,136 @@ namespace Exercise3
                                 ? Enumerable.Repeat(items[0], 1)
                                 : Enumerable.Range(items[0], items[1] - items[0] + 1));
 
-            Console.WriteLine("Question 5");
+            Console.WriteLine("Question 6");
             Console.WriteLine(string.Join(" ", res));
+        }
+
+        public static void Question7()
+        {
+            var source = "10,5,0,8,10,1,4,0,10,1";
+
+            var res = source
+                .Split(",", StringSplitOptions.RemoveEmptyEntries)
+                .Select(str => int.Parse(str))
+                .OrderBy(num => num)
+                .Skip(3)
+                .Sum();
+
+            Console.WriteLine("Question 7");
+            Console.WriteLine(res);
+        }
+
+        public static void Question8()
+        {
+            var source = ('c', 6);
+
+            var oneToEight = Enumerable.Range(1, 8);
+
+            var upLeft = oneToEight
+                .Select(i => ((char)(source.Item1 - i), source.Item2 - i))
+                .TakeWhile(pair => (pair.Item1 >= 'a') && (pair.Item2 >= 1));
+
+            var upRight = oneToEight
+                .Select(i => ((char)(source.Item1 - i), source.Item2 + i))
+                .TakeWhile(pair => (pair.Item1 >= 'a') && (pair.Item2 <= 8));
+
+            var downLeft = oneToEight
+                .Select(i => ((char)(source.Item1 + i), source.Item2 - i))
+                .TakeWhile(pair => (pair.Item1 <= 'h') && (pair.Item2 >= 1));
+
+            var downRight = oneToEight
+                .Select(i => ((char)(source.Item1 + i), source.Item2 + i))
+                .TakeWhile(pair => (pair.Item1 <= 'h') && (pair.Item2 <= 8));
+
+            var res = upLeft
+                .Concat(upRight)
+                .Concat(downLeft)
+                .Concat(downRight)
+                .Select(pair => $"{pair.Item1}{pair.Item2}");
+
+            Console.WriteLine("Question 8");
+            Console.WriteLine(string.Join(" ", res));
+        }
+        public static void Question9()
+        {
+            var source = "0,6,12,18,24,30,36,42,48,53,58,63,68,72,77,80,84,87,90,92,95,96,98,99,99,100,99,99,98,96,95,92,90,87,84,80,77,72,68,63,58,53,48,42,36,30,24,18,12,6,0,-6,-12,-18,-24,-30,-36,-42,-48,-53,-58,-63,-68,-72,-77,-80,-84,-87,-90,-92,-95,-96,-98,-99,-99,-100,-99,-99,-98,-96,-95,-92,-90,-87,-84,-80,-77,-72,-68,-63,-58,-53,-48,-42,-36,-30,-24,-18,-12,-6";
+
+            var res = source
+                .Split(",", StringSplitOptions.RemoveEmptyEntries)
+                .Select(s => int.Parse(s))
+                .Where((item, index) => index % 5 == 4);
+
+            Console.WriteLine("Question 9");
+            Console.WriteLine(string.Join(", ", res));
+        }
+
+        public static void Question10()
+        {
+            var source = "Yes,Yes,No,Yes,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,Yes,No,No,Yes,Yes";
+
+            var res = source
+                .Split(",", StringSplitOptions.RemoveEmptyEntries)
+                .Select(s => s == "Yes" ? +1 : -1)
+                .Sum();
+
+            Console.WriteLine("Question 10");
+            Console.WriteLine(res);
+        }
+
+        public static void Question11()
+        {
+            var source = "Dog,Cat,Rabbit,Dog,Dog,Lizard,Cat,Cat,Dog,Rabbit,Guinea Pig,Dog";
+
+            var res = source
+                .Split(",", StringSplitOptions.RemoveEmptyEntries)
+                .Select(str => (str == "Dog") || (str == "Cat")
+                                    ? str
+                                    : "Other")
+                .GroupBy(str => str)
+                .Select(group => (name: group.Key, count: group.Count()));
+
+            Console.WriteLine("Question 11");
+            Console.WriteLine(string.Join(", ", res));
+        }
+
+        public static void Question12()
+        {
+            var source = "1,2,1,1,0,3,1,0,0,2,4,1,0,0,0,0,2,1,0,3,1,0,0,0,6,1,3,0,0,0";
+
+            var res = source
+                .Split(",", StringSplitOptions.RemoveEmptyEntries)
+                .Aggregate((current: 0, max: 0),
+                           (acc, item) => item != "0" ? (current: 0, max: acc.max)
+                                                      : (current: acc.current + 1, max: Math.Max(acc.max, acc.current + 1)),
+                           acc => acc.max);
+
+            Console.WriteLine("Question 12");
+            Console.WriteLine(res);
+        }
+
+        public static void Question13()
+        {
+            var source = "Santi Cazorla, Per Mertesacker, Alan Smith, Thierry Henry, Alex Song, Paul Merson, Alexis Sánchez, Robert Pires, Dennis Bergkamp, Sol Campbell";
+
+            var res = source
+                .Split(",", StringSplitOptions.RemoveEmptyEntries)
+                .Select(str => str.Trim())
+                .GroupBy(fullName => string.Join(" ", fullName
+                                                        .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                                                        .Select(str => str[0])))
+                .Where(group => group.Count() > 1);
+
+            Console.WriteLine("Question 13");
+            foreach (var group in res)
+            {
+                Console.WriteLine(string.Join(", ", group));
+            }
+
+
+
+                
+
+
         }
 
 
