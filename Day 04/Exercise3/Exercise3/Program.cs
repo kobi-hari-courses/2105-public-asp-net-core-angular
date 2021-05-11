@@ -243,12 +243,6 @@ namespace Exercise3
             {
                 Console.WriteLine(string.Join(", ", group));
             }
-
-
-
-                
-
-
         }
 
 
