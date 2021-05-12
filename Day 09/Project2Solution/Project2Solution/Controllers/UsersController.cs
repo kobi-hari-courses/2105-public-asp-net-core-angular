@@ -20,12 +20,12 @@ namespace Project2Solution.Controllers
             _repo = repo;
         }
 
-        [HttpGet("{username}")]
-        public async Task<ActionResult<User>> GetManufacturer(string username)
+        [HttpGet("{username}", Name =nameof(GetUser))]
+        public async Task<ActionResult<User>> GetUser(string username)
         {
             try
             {
-                var res = await _repo.GetManufacturerByName(name);
+                var res = await _repo.GetUserByUsername(username);
                 return Ok(res);
             }
             catch
@@ -34,7 +34,31 @@ namespace Project2Solution.Controllers
             }
         }
 
+        [HttpPost("")]
+        public async Task<ActionResult<User>> AddUser(User user)
+        {
+            try
+            {
+                var res = await _repo.AddUser(user);
+                return CreatedAtRoute(nameof(GetUser), new { username = res.Username }, res);
+            } catch
+            {
+                return BadRequest();
+            }
+        }
 
-
+        [HttpDelete("")]
+        public async Task<ActionResult> DeleteUser(string username)
+        {
+            try
+            {
+                await _repo.DeleteUser(username);
+                return Ok();
+            }
+            catch
+            {
+                return NotFound();
+            }
+        }
     }
 }
