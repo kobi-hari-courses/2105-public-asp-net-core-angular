@@ -9,26 +9,19 @@ using System.Threading.Tasks;
 
 namespace Project2Solution.Controllers
 {
-    [Route("api/manufacturers")]
+    [Route("api/users")]
     [ApiController]
-    public class ManufacturersController : ControllerBase
+    public class UsersController : ControllerBase
     {
         private IRepositoryService _repo;
 
-        public ManufacturersController(IRepositoryService repo)
+        public UsersController(IRepositoryService repo)
         {
             _repo = repo;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<ManufacturersController>>> GetAllManufacturers()
-        {
-            var all = await _repo.GetAllManufacturers();
-            return Ok(all);
-        }
-
-        [HttpGet("{name}")]
-        public async Task<ActionResult<Manufacturer>> GetManufacturer(string name)
+        [HttpGet("{username}")]
+        public async Task<ActionResult<User>> GetManufacturer(string username)
         {
             try
             {
@@ -40,5 +33,8 @@ namespace Project2Solution.Controllers
                 return NotFound();
             }
         }
+
+
+
     }
 }

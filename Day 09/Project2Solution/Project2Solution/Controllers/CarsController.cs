@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Project2Solution.Entities;
 using Project2Solution.Services;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace Project2Solution.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<CarsController>> GetCar(Guid id)
+        public async Task<ActionResult<Car>> GetCar(Guid id)
         {
             try
             {
