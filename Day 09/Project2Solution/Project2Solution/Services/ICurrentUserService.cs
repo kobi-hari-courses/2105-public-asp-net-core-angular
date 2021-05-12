@@ -8,6 +8,7 @@ namespace Project2Solution.Services
     {
         Task<IEnumerable<Car>> GetCarsOfCurrentUser();
         Task<User> GetCurrentUser();
+        Task<string> GetCurrentUsername();
         Task SetCurrentUser(string username);
     }
 }

@@ -21,10 +21,19 @@ namespace Project2Solution.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CarsController>>> GetAllCars()
+        public async Task<ActionResult<IEnumerable<Car>>> GetAllCars([FromServices] ICurrentUserService currentUser)
         {
-            var all = await _repo.GetAllCars();
-            return Ok(all);
+            var username = await currentUser.GetCurrentUsername();
+
+            if (string.IsNullOrWhiteSpace(username))
+            {
+                var all = await _repo.GetAllCars();
+                return Ok(all);
+            } else
+            {
+                var all = await _repo.GetAllCarsOfUser(username);
+                return Ok(all);
+            }
         }
 
         [HttpGet("{id}")]
