@@ -22,6 +22,11 @@ namespace Project2Solution.Services
             return Task.CompletedTask;
         }
 
+        public Task<string> GetCurrentUsername()
+        {
+            return Task.FromResult(_currentUsername);
+        }
+
         public Task<User> GetCurrentUser()
         {
             return _repo.GetUserByUsername(_currentUsername);
