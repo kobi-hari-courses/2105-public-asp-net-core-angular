@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Project2Solution.Middleware;
 using Project2Solution.Services;
 using System;
 using System.Collections.Generic;
@@ -28,6 +29,7 @@ namespace Project2Solution
             services.AddControllers();
             services.AddTransient<IDataReaderService, DataReaderService>();
             services.AddSingleton<IRepositoryService, RepositoryService>();
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +43,8 @@ namespace Project2Solution
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCurrentUser();
 
             app.UseEndpoints(endpoints =>
             {
