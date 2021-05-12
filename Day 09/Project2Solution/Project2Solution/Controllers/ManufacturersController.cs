@@ -8,31 +8,31 @@ using System.Threading.Tasks;
 
 namespace Project2Solution.Controllers
 {
-    [Route("api/cars")]
+    [Route("api/manufacturers")]
     [ApiController]
-    public class Cars : ControllerBase
+    public class ManufacturersController : ControllerBase
     {
         private IRepositoryService _repo;
 
-        public Cars(IRepositoryService repo)
+        public ManufacturersController(IRepositoryService repo)
         {
             _repo = repo;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Cars>>> GetAllCars()
+        public async Task<ActionResult<IEnumerable<ManufacturersController>>> GetAllManufacturers()
         {
-            var all = await _repo.GetAllCars();
+            var all = await _repo.GetAllManufacturers();
             return Ok(all);
         }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Cars>> GetCar(Guid id)
+        [HttpGet("{name}")]
+        public async Task<ActionResult<ManufacturersController>> GetManufacturer(string name)
         {
             try
             {
-                var car = await _repo.GetCarById(id);
-                return Ok(car);
+                var res = await _repo.GetManufacturerByName(name);
+                return Ok(res);
             }
             catch
             {
