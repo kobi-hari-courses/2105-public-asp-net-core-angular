@@ -1,4 +1,6 @@
+using CoursesApp.Middlewares;
 using CoursesApp.Model.Entities;
+using CoursesApp.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -25,8 +27,9 @@ namespace CoursesApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
+            services.AddSingleton<IRepositoryService, RepositoryService>();
+            services.AddScoped<IIdService, IdService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +43,8 @@ namespace CoursesApp
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UsePlayful();
 
             app.UseEndpoints(endpoints =>
             {

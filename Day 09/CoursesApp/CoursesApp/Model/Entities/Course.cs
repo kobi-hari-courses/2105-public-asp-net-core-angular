@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 namespace CoursesApp.Model.Entities
 {
     public record Course(
-        int Id, 
+        Guid Id, 
         string Name, 
         string Category, 
-        int InstructorId
+        Guid InstructorId
         );
 }

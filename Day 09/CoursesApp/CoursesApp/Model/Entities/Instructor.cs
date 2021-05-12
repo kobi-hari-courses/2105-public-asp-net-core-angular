@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace CoursesApp.Model.Entities
 {
     public record Instructor(
-        int Id, 
+        Guid Id, 
         string Name
         );
 }
