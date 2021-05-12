@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project2Solution.Services
 {
-    public class RepositoryService
+    public class RepositoryService : IRepositoryService
     {
         private bool _isAllDataLoaded = false;
         private Dictionary<Guid, Car> _cars;

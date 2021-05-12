@@ -26,7 +26,8 @@ namespace Project2Solution
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IDataReaderService, DataReaderService>();
+            services.AddTransient<IDataReaderService, DataReaderService>();
+            services.AddSingleton<IRepositoryService, RepositoryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
