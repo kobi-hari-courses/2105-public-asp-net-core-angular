@@ -46,6 +46,7 @@ and also - through `Whatsapp`
 - [Exercise 2: Enumerables](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-2-Enumerables)
 - [Exercise 3: LINQ](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-3---LINQ)
 - [Exercise 4: Web API](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-4---Web-API)
+- [Exercise 5: Javascript](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-5--Fun-with-JS)
 
 ## Home work
 - [Homework 1: Just before LINQ](https://github.com/kobi2294/Course-2105-Public/wiki/Homework-1---Before-LINQ)
