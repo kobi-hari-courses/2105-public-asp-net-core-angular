@@ -10,6 +10,24 @@ and also - through `Whatsapp`
 * Extension Methods
 * 'IEnumerable' and 'IEnumerator'
 * LINQ
+* TPL And introduction to async development
+* Introduction to Asp.Net core
+* Web API in .net core
+* Dependency Injection in .net core
+* Entity Framework core
+* Introduction to nodeJS and Npm
+* Javascript (for web and for nodeJs)
+* Typescript
+* Introduction to Angular
+* Deep dive into Angular Components
+* Angular Service model and Dependency Injection
+* Promises in javascript
+* Reactive Development using RxJS and Rx.Net
+* Angular Http
+* The Angular Router
+* Angular Custom Directives and Pipes
+* Angular Forms
+* Redux using NgRx
 
 # Daily Summaries
 * [Day 01 - Generics and Delegates](https://github.com/kobi2294/Course-2105-Public/wiki/Day-01-Generics-and-Delegates)
@@ -21,6 +39,7 @@ and also - through `Whatsapp`
 * [Day 07 - Asp.net & Web API](https://github.com/kobi2294/Course-2105-Public/wiki/Day-07---Asp.net-&-Web-API)
 * [Day 08 - WebAPI, DI, Microservices](https://github.com/kobi2294/Course-2105-Public/wiki/Day-08---More-WebAPI,-Dependency-Injection-and-Microsevices)
 * [Day 09 - WebAPI and Advanced DI](https://github.com/kobi2294/Course-2105-Public/wiki/Day-09---More-Web-API,-Dependency-Injection)
+* [Day 12 - Git, NodeJS, Npm, Javascript and Typescript]()
 
 ## Class Exercises
 - [Exercise 1: Generics](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-1---Generics)
