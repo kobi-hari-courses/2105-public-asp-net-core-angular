@@ -17,6 +17,10 @@ export class Calculator {
         return this.a * this.b;
     }
 
+    divide(): number {
+        return this.a / this.b;
+    }
+
     log() {
         console.log(`${this.a} + ${this.b} = ${this.add()}`);
         console.log(`${this.a} - ${this.b} = ${this.subtract()}`);
