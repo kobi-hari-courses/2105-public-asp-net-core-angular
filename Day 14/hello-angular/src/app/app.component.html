@@ -1,0 +1,12 @@
+<input #myInput (input)="setKeyword(myInput.value)" 
+    type="search" 
+    [disabled]="isBusy">
+<button (click)="search()" [disabled]="isBusy">Go!</button>
+<img *ngIf="isBusy" 
+    src="https://thumbs.gfycat.com/RelievedSilentArcticwolf-max-1mb.gif">
+
+<ul>
+    <li *ngFor="let res of results; let mispar = index">
+        {{mispar+1}}. {{res}}
+    </li>
+</ul>

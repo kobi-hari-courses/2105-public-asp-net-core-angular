@@ -22,8 +22,8 @@ export class Exam {
         let totalCorrect = 0;
 
         for (let i = 0; i < answers.length; i++) {
-            let question = this.questions[i];
-            let answer = answers[i];
+            const question = this.questions[i];
+            const answer = answers[i];
 
             if (typeof(question) !== 'undefined') {
                 if (answer === question.correctIndex) totalCorrect++;
