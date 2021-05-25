@@ -1,0 +1,25 @@
+<h1>Calculator</h1>
+
+<div>
+    <span>A:</span>
+    <input #inputA type="number" (input)="setA(inputA.value)">
+    <span>B:</span>
+    <input #inputB type="number" (input)="setB(inputB.value)">    
+</div>
+
+<div>
+    <button (click)="calc()">GO</button>
+</div>
+
+<div *ngIf="hasResults">
+    <p>
+        {{a}} + {{b}} = {{sum}}
+    </p>
+    <p>
+        {{a}} - {{b}} = {{difference}}
+    </p>
+    <p>
+        {{a}} * {{b}} = {{product}}
+    </p>
+</div>
+
