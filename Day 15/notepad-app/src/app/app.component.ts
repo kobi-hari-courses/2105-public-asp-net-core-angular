@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     // data
-    colors: string[] = ['red', 'green', 'blue', 'brown', 'magenta', 'navy', 'cherry', 'black'];
+    colors: string[] = ['red', 'green', 'blue', 'brown', 'magenta', 'navy', 'salmon', 'black'];
     sizes: string[] = ['14px', '18px', '24px', '40px', '80px'];
     fonts: string[] = ['Arial', 'Verdana', 'Roboto', 'David', 'Segoe UI', 'Courier New'];
 
