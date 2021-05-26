@@ -1,0 +1,12 @@
+<button (click)="toggle()">
+    <span *ngIf="isOpen">-</span>
+    <span *ngIf="!isOpen">+</span>
+</button>
+
+<div class="header-area">
+    <ng-content select="[expander-header]"></ng-content>
+</div>
+
+<div class="content-area" *ngIf="isOpen">
+    <ng-content></ng-content>
+</div>
