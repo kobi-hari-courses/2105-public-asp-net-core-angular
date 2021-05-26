@@ -41,6 +41,7 @@ and also - through `Whatsapp`
 * [Day 09 - WebAPI and Advanced DI](https://github.com/kobi2294/Course-2105-Public/wiki/Day-09---More-Web-API,-Dependency-Injection)
 * [Day 12 - Git, NodeJS, Npm, Javascript and Typescript](https://github.com/kobi2294/Course-2105-Public/wiki/Day-12---Javascript,-Node-JS)
 * [Day 13 - Typescript, NodeJS](https://github.com/kobi2294/Course-2105-Public/wiki/Day-13---Typescript-and-NodeJS)
+* [Day 14 - Introduction to Angular](https://github.com/kobi2294/Course-2105-Public/wiki/Day-14---Angular-CLI,-App-&-Components)
 
 ## Class Exercises
 - [Exercise 1: Generics](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-1---Generics)
