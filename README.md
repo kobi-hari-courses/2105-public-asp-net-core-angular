@@ -41,6 +41,7 @@ and also - through `Whatsapp`
 * [Day 09 - WebAPI and Advanced DI](https://github.com/kobi2294/Course-2105-Public/wiki/Day-09---More-Web-API,-Dependency-Injection)
 * [Day 12 - Git, NodeJS, Npm, Javascript and Typescript](https://github.com/kobi2294/Course-2105-Public/wiki/Day-12---Javascript,-Node-JS)
 * [Day 13 - Typescript, NodeJS](https://github.com/kobi2294/Course-2105-Public/wiki/Day-13---Typescript-and-NodeJS)
+* [Day 14 - Introduction to Angular](https://github.com/kobi2294/Course-2105-Public/wiki/Day-14---Angular-CLI,-App-&-Components)
 
 ## Class Exercises
 - [Exercise 1: Generics](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-1---Generics)
@@ -57,3 +58,14 @@ and also - through `Whatsapp`
 ## Practice Projects
 - [Project 1: Cars and Manufacturers](https://github.com/kobi2294/Course-2105-Public/wiki/Project-1---Cars-and-Manufacturers)
 - [Project 2: Web API Cars](https://github.com/kobi2294/Course-2105-Public/wiki/Project-2---Cars-and-Manufacturers---Online)
+
+## Extra Links
+- [Grid Garden](https://cssgridgarden.com/)
+- [Flex Froggy](https://flexboxfroggy.com/)
+- [Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Complete Guid to CSS Flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+
+
+
+
