@@ -42,6 +42,7 @@ and also - through `Whatsapp`
 * [Day 12 - Git, NodeJS, Npm, Javascript and Typescript](https://github.com/kobi2294/Course-2105-Public/wiki/Day-12---Javascript,-Node-JS)
 * [Day 13 - Typescript, NodeJS](https://github.com/kobi2294/Course-2105-Public/wiki/Day-13---Typescript-and-NodeJS)
 * [Day 14 - Introduction to Angular](https://github.com/kobi2294/Course-2105-Public/wiki/Day-14---Angular-CLI,-App-&-Components)
+* [Day 15 - Angular Components](https://github.com/kobi2294/Course-2105-Public/wiki/Day-15---Angular-Components-in-depth)
 
 ## Class Exercises
 - [Exercise 1: Generics](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-1---Generics)
