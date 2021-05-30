@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { observable, Observer } from 'rxjs';
+import { BehaviorSubject, Observer, Subject } from 'rxjs';
 import { interval, Observable } from 'rxjs';
 
 @Component({
@@ -8,6 +8,14 @@ import { interval, Observable } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+    isShowingReader = true;
+
+    toggleReader() {
+        this.isShowingReader = !this.isShowingReader;
+    }
+
+
+
     createIntervalObservable(): Observable<number> {
         return interval(1000);
     }
@@ -22,6 +30,30 @@ export class AppComponent {
         })
     }
 
+    createCustomSubject(): Observable<number> {
+        let res = new Subject<number>();
+
+        res.next(100);
+        setTimeout(() => res.next(200) , 2000);
+        setTimeout(() => res.next(300) , 5000);
+        setTimeout(() => res.next(400) , 8000);
+        setTimeout(() => res.complete() , 10000);
+
+        return res;
+    }
+
+    createCustomBehaviorSubject(): Observable<number> {
+        let res = new BehaviorSubject<number>(100);
+
+        setTimeout(() => res.next(200) , 2000);
+        setTimeout(() => res.next(300) , 5000);
+        setTimeout(() => res.next(400) , 8000);
+        setTimeout(() => res.complete() , 10000);
+
+        return res;
+
+    }
+
     createObserver(id: string): Observer<number> {
         return {
             next: val => console.log(`observer ${id}: next ${val}`), 
@@ -34,7 +66,8 @@ export class AppComponent {
         let observer1 = this.createObserver('A');
         let observer2 = this.createObserver('B');
 
-        let observable = this.createCustomObservable();
+        let observable = this.createCustomBehaviorSubject();
+        console.log('Observable Created');
 
         observable.subscribe(observer1);
 
