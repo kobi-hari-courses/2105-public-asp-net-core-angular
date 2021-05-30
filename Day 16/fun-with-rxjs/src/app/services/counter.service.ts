@@ -6,8 +6,8 @@ import { BehaviorSubject, Observable, Subject } from 'rxjs';
 })
 export class CounterService {
     private value: number = 0;
-    // private value$ = new BehaviorSubject<number>(this.value);
-    private value$ = new Subject<number>();
+    private value$ = new BehaviorSubject<number>(this.value);
+    // private value$ = new Subject<number>();
 
 
     constructor() { }
