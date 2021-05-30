@@ -42,6 +42,7 @@ and also - through `Whatsapp`
 * [Day 12 - Git, NodeJS, Npm, Javascript and Typescript](https://github.com/kobi2294/Course-2105-Public/wiki/Day-12---Javascript,-Node-JS)
 * [Day 13 - Typescript, NodeJS](https://github.com/kobi2294/Course-2105-Public/wiki/Day-13---Typescript-and-NodeJS)
 * [Day 14 - Introduction to Angular](https://github.com/kobi2294/Course-2105-Public/wiki/Day-14---Angular-CLI,-App-&-Components)
+* [Day 15 - Angular Components](https://github.com/kobi2294/Course-2105-Public/wiki/Day-15---Angular-Components-in-depth)
 
 ## Class Exercises
 - [Exercise 1: Generics](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-1---Generics)
@@ -58,6 +59,10 @@ and also - through `Whatsapp`
 ## Practice Projects
 - [Project 1: Cars and Manufacturers](https://github.com/kobi2294/Course-2105-Public/wiki/Project-1---Cars-and-Manufacturers)
 - [Project 2: Web API Cars](https://github.com/kobi2294/Course-2105-Public/wiki/Project-2---Cars-and-Manufacturers---Online)
+- [Project 3: Angular Pop Quiz](https://github.com/kobi2294/Course-2105-Public/wiki/Project-3-Pop-Quiz-in-Angular)
+    * [Project 3 Helper Video](https://www.dropbox.com/s/8ybqibl7geul9bm/Solution.mp4?dl=0)
+    * [Project 3 Presentation](https://www.dropbox.com/s/rkhx8ge3lj5um6t/Description.pptx?dl=0)
+
 
 ## Extra Links
 - [Grid Garden](https://cssgridgarden.com/)
