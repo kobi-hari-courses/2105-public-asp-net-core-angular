@@ -1,0 +1,9 @@
+<input type="search" #keyword (input)="setKeyword(keyword.value)">
+
+<img 
+    *ngIf="isBusy$ | async"
+    src="https://www.retresco.de/wp-content/themes/rts/assets/deltatre/textengine-demo/spinner.gif">
+
+<div *ngFor="let color of (results$ | async)" [style.background]="color.code">
+    {{color.name}}
+</div>
