@@ -1,0 +1,26 @@
+:host {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.you {
+    grid-column: 2;
+}
+
+.comp {
+    grid-column: 3;
+}
+
+app-color-editor {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+button {
+    align-self: flex-start;
+}
+
+.success {
+    font-size: 40px;
+    color: green;
+}

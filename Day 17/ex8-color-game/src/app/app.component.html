@@ -1,0 +1,10 @@
+<app-color-editor></app-color-editor>
+
+<span class="you">Your Guess</span>
+<span class="comp">Computer</span>
+<app-color-presenter class="you" [color]="myColor$ | async"></app-color-presenter>    
+<app-color-presenter class="comp" [color]="compColor$ | async"></app-color-presenter>
+
+<button (click)="randomize()">Random Color</button>
+
+<span class="success" *ngIf="success$ | async">SUCCESS!!!!</span>
