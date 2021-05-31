@@ -52,6 +52,7 @@ and also - through `Whatsapp`
 - [Exercise 5: Javascript](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-5--Fun-with-JS)
 - [Exercise 6: Typescript](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-6--Fun-with-Typescript)
 - [Exercise 7: Basic Angular](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-7-Angular-Single-Component)
+- [Exercise 8: RxJS](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-8---RxJS)
 
 ## Home work
 - [Homework 1: Just before LINQ](https://github.com/kobi2294/Course-2105-Public/wiki/Homework-1---Before-LINQ)
