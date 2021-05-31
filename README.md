@@ -70,7 +70,9 @@ and also - through `Whatsapp`
 - [Flex Froggy](https://flexboxfroggy.com/)
 - [Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Complete Guid to CSS Flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-
+- [RxJs documentation](https://rxjs.dev/)
+- [Rx Marbles](https://rxmarbles.com/)
+- [Marbles Visualizer](https://rxviz.com/)
 
 
 
