@@ -1,3 +1,14 @@
 <a routerLinkActive="po" routerLink="home">Home</a>
 <a routerLinkActive="po" routerLink="movies">Movies</a>
 <a routerLinkActive="po" routerLink="account">Account</a>
+
+<div class="seperator"></div>
+
+<div class="label">
+    <ng-container *ngIf="isLoggedIn$ | async">
+        Logged In
+    </ng-container>
+    <ng-container *ngIf="!(isLoggedIn$ | async)">
+        Logged Out
+    </ng-container>
+</div>

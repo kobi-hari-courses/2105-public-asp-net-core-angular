@@ -1,1 +1,4 @@
-<p>account works!</p>
+<h1>{{userType$ | async}}</h1>
+
+<button *ngIf="isLoggedIn$ | async" (click)="logout()">Logout</button>
+<button *ngIf="!(isLoggedIn$ | async)" (click)="login()">Login</button>

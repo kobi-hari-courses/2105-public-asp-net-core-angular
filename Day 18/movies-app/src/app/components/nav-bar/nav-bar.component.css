@@ -14,3 +14,12 @@ a {
 a.po {
     background-color: rgb(175, 218, 175);
 }
+
+.seperator {
+    flex: 1;
+}
+
+.label {
+    align-self:center;
+    margin: 10px;
+}
