@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    background: lightblue;
+    padding: 10px;
+}
+
+nav a.i-am-here {
+    background: rgb(130, 169, 182);
+}
