@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(227, 246, 227);
+}
+
+a {
+    display: flex;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+a.po {
+    background-color: rgb(175, 218, 175);
+}

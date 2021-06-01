@@ -1,0 +1,37 @@
+:host {
+    display: flex;
+    padding: 20px;
+    border: 1px solid rgb(75, 143, 75);
+}
+
+button {
+    align-self: center;
+    margin: 4px;
+    padding: 4px;
+}
+
+div {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 300px auto;
+    border: 1px solid rgb(75, 143, 75);
+}
+
+h1 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    background: rgb(75, 143, 75);
+    color: white;
+}
+
+img {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+p {
+    grid-column: 2;
+    grid-row: 2;
+}
