@@ -1,0 +1,9 @@
+<input #movieId type="number">
+<button (click)="search(movieId.value)">GO!</button>
+
+<ng-container *ngIf="(movie$ | async) as movie">
+    <h1>{{movie.caption}}</h1>
+    <p>{{movie.description}}</p>
+    <img [src]="movie.poster">
+</ng-container>
+
