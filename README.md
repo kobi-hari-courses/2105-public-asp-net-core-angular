@@ -44,7 +44,7 @@ and also - through `Whatsapp`
 * [Day 14 - Introduction to Angular](https://github.com/kobi2294/Course-2105-Public/wiki/Day-14---Angular-CLI,-App-&-Components)
 * [Day 15 - Angular Components](https://github.com/kobi2294/Course-2105-Public/wiki/Day-15---Angular-Components-in-depth)
 * [Day 16 - DI, Promises and RxJs](https://github.com/kobi2294/Course-2105-Public/wiki/Day-16---DI-Promises-and-RxJs)
-* 
+* [Day 17 - RxJs Operators](https://github.com/kobi2294/Course-2105-Public/wiki/Day-17---RxJS-Operators)
 
 ## Class Exercises
 - [Exercise 1: Generics](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-1---Generics)
