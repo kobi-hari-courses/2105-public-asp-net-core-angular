@@ -43,6 +43,8 @@ and also - through `Whatsapp`
 * [Day 13 - Typescript, NodeJS](https://github.com/kobi2294/Course-2105-Public/wiki/Day-13---Typescript-and-NodeJS)
 * [Day 14 - Introduction to Angular](https://github.com/kobi2294/Course-2105-Public/wiki/Day-14---Angular-CLI,-App-&-Components)
 * [Day 15 - Angular Components](https://github.com/kobi2294/Course-2105-Public/wiki/Day-15---Angular-Components-in-depth)
+* [Day 16 - DI, Promises and RxJs](https://github.com/kobi2294/Course-2105-Public/wiki/Day-16---DI-Promises-and-RxJs)
+* 
 
 ## Class Exercises
 - [Exercise 1: Generics](https://github.com/kobi2294/Course-2105-Public/wiki/Exercise-1---Generics)
@@ -64,6 +66,10 @@ and also - through `Whatsapp`
 - [Project 3: Angular Pop Quiz](https://github.com/kobi2294/Course-2105-Public/wiki/Project-3-Pop-Quiz-in-Angular)
     * [Project 3 Helper Video](https://www.dropbox.com/s/8ybqibl7geul9bm/Solution.mp4?dl=0)
     * [Project 3 Presentation](https://www.dropbox.com/s/rkhx8ge3lj5um6t/Description.pptx?dl=0)
+- [Project 4: Reactive Pop Quiz]()
+    * [Project 4 Presentation](https://www.dropbox.com/s/n9pawcvycxv03sx/Description.pptx?dl=0)
+    * [Project 4 Helper Video](https://www.dropbox.com/s/eba2hohp9z7fzkh/Solution.mp4?dl=0)
+    * 
 
 
 ## Extra Links
@@ -74,6 +80,7 @@ and also - through `Whatsapp`
 - [RxJs documentation](https://rxjs.dev/)
 - [Rx Marbles](https://rxmarbles.com/)
 - [Marbles Visualizer](https://rxviz.com/)
+- [RxJs Introduction Video](https://www.dropbox.com/s/05vsshf61oh5p1y/Reactive%20X.mp4?dl=0)
 
 
 
