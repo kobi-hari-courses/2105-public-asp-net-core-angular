@@ -70,7 +70,6 @@ and also - through `Whatsapp`
 - [Project 4: Reactive Pop Quiz]()
     * [Project 4 Presentation](https://www.dropbox.com/s/n9pawcvycxv03sx/Description.pptx?dl=0)
     * [Project 4 Helper Video](https://www.dropbox.com/s/eba2hohp9z7fzkh/Solution.mp4?dl=0)
-    * 
 
 
 ## Extra Links
