@@ -1,15 +1,31 @@
-<h1 [style.color]="myFavoriteColor">Hello Directives</h1>
+<h1 x [style.color]="myFavoriteColor">Hello Directives</h1>
 
-<h2 appHighlight>Element Directives</h2>
+<h2 x appHighlight="pink" (removed)="onRemoved('pink')" >Element Directives</h2>
+
+<app-colored-text appHighlight="yellow" (removed)="onRemoved('component')" color="red"></app-colored-text>
 
 <ul>
-    <li>How to create directives</li>
+    <li (click)="whenClicked($event)">How to create directives</li>
     <li>How to change elements</li>
     <li appHighlight>How to use the renderer</li>
-    <li>HostBinding</li>
+    <li class="blabla">HostBinding</li>
     <li>HostListener</li>
-    <li>Input</li>
+    <li appLimitLength>Input</li>
     <li>Who gets the Input?</li>
     <li>Output</li>
     <li>Same name input</li>
 </ul>
+
+<input appLimitLength [maxLength]="10" type="text">
+<input appLimitLength [maxLength]="10" type="checkbox">
+
+<input type="text">
+
+<table>
+    <tr>
+        
+    </tr>
+    <tr>
+        
+    </tr>
+</table>
