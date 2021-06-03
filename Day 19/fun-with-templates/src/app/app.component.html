@@ -1,0 +1,75 @@
+<button (click)="toggleNames()">Toggle Names</button>
+
+<ng-template #firstSecond let-mispar let-x="postfix" let-y="prefix">
+    <ul>
+        <li>{{y}} First {{x}} {{mispar}}</li>
+        <li>{{y}} Second {{x}} {{mispar}}</li>
+    </ul>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="firstSecond; context: {$implicit: 12, postfix: 'Square', prefix: 'The'}">
+</ng-container>
+
+<ng-container *ngTemplateOutlet="firstSecond; context: {$implicit: 13, postfix: 'Circle', prefix: 'A'}">
+</ng-container>
+
+
+<table>
+    <thead>
+        <tr>
+            <ng-container *ngIf="showNames">
+                <th>First Name</th>
+                <th>Last Name</th>
+            </ng-container>
+
+            <th>Title</th>
+        </tr>
+        <tr *ngFor="let person of people">
+            <ng-container *ngIf="showNames">
+                <td>{{person.firstName}}</td>
+                <td>{{person.lastName}}</td>
+            </ng-container>
+            <td>{{person.title}}</td>
+        </tr>
+    </thead>
+</table>
+
+<hr>
+<div *ngIf="showNames">
+    John, Paul, George, Ringo
+</div>
+
+<hr>
+<ng-template [ngIf]="showNames">
+    <div>
+        John, Paul, George, Ringo
+    </div>
+</ng-template>
+
+<hr>
+
+<div *appIm="showNames times 3">
+    John, Paul, George, Ringo
+</div>
+
+<hr>
+
+<ng-template [appIm]="showNames" [appImTimes]="5">
+    <div>
+        John, Paul, George, Ringo
+    </div>    
+</ng-template>
+
+<hr>
+
+<div *ngFor="let item in items; let i = index">{{i}}: {{item}}</div>
+
+<hr>
+
+<ng-template [ngFor] let-item [ngForIn]="items" let-i="index">
+    <div>{{item}}</div>
+</ng-template>
+
+
+
+
