@@ -1,0 +1,27 @@
+<h1>Hello Pipes</h1>
+<h2>{{title | titlecase | reverse }}</h2>
+
+<h3>
+    the time is {{today | date:'hh:mm:ss':'EST' | uppercase}}
+</h3>
+
+<ul>
+    <li *ngFor="let color of colors | filter:'ee'">
+        {{color}}
+    </li>
+</ul>
+
+<input type="text" #colorToAdd>
+<button (click)="addColor(colorToAdd.value)">Add color</button>
+
+
+<app-red-square>
+    
+</app-red-square>
+
+<app-blue-square>
+    
+</app-blue-square>
+
+<app-combined-sqaure></app-combined-sqaure>
+
