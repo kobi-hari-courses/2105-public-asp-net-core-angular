@@ -1,0 +1,10 @@
+<ng-container *ngIf="(question$ | async) as question">
+    <h1>{{question.caption}}</h1>
+    <ul>
+        <li *ngFor="let answer of question.answers; let i = index"
+            (click)="answerQuestion(i)"
+        >
+            {{i+1}}. {{answer}}
+        </li>
+    </ul>
+</ng-container>

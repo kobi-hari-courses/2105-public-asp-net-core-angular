@@ -10,13 +10,18 @@ import { AddQuestionComponent } from './components/add-question/add-question.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { QuestionListComponent } from './components/question-list/question-list.component';
 import { QuestionDetailsComponent } from './components/question-details/question-details.component';
+import { AnswerQuestionComponent } from './components/answer-question/answer-question.component';
+import { QuizResultsComponent } from './components/quiz-results/quiz-results.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddQuestionComponent,
     QuestionListComponent,
-    QuestionDetailsComponent
+    QuestionDetailsComponent,
+    AnswerQuestionComponent,
+    QuizResultsComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,7 @@ import { QuestionDetailsComponent } from './components/question-details/question
     StoreModule.forRoot({
         app: appReducer
     }), 
-    StoreDevtoolsModule.instrument({maxAge: 50})
+    StoreDevtoolsModule.instrument({maxAge: 50, logOnly: environment.production})
   ],
   providers: [],
   bootstrap: [AppComponent]
