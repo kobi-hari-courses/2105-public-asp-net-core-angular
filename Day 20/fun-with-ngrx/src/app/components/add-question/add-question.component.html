@@ -1,0 +1,16 @@
+<div class="form" [formGroup]="form">
+    <div class="form-field">
+        <label>Caption</label>
+        <input type="text" formControlName="caption">
+    </div>
+    <div class="form-field">
+        <label>Answers</label>
+        <input type="text" formControlName="answers">
+    </div>
+    <div class="form-field">
+        <label>Correct Answer</label>
+        <input type="number" formControlName="correctAnswer">
+    </div>
+</div>
+
+<button [disabled]="form.invalid" (click)="add()">Add</button>

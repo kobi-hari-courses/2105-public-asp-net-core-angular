@@ -1,0 +1,8 @@
+.correct {
+    font-weight: bold;
+    background: rgb(221, 236, 241);
+}
+
+li {
+    list-style: none;
+}

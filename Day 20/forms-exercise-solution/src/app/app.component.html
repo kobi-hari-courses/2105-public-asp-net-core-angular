@@ -1,0 +1,21 @@
+<div class="form" [formGroup]="form">
+    <div class="form-field" *ngIf="get('name') as field">
+        <label>Name</label>
+        <input type="text" formControlName="name">
+        <app-errors-presenter [errors]="field.errors"></app-errors-presenter>
+    </div>
+
+    <div class="form-field" *ngIf="get('description') as field">
+        <label>Descrption</label>
+        <textarea rows="4" formControlName="description"></textarea>
+        <app-errors-presenter [errors]="field.errors"></app-errors-presenter>
+    </div>
+
+    <div class="form-field" *ngIf="get('poster') as field">
+        <label>Poster</label>
+        <input type="text" formControlName="poster">
+        <app-errors-presenter [errors]="field.errors"></app-errors-presenter>
+    </div>
+</div>
+
+<button [disabled]="form.invalid" (click)="onGo()">Go</button>

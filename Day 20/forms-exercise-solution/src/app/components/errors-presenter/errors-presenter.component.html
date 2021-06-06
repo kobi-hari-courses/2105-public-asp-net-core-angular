@@ -1,0 +1,11 @@
+<div *ngIf="errors" class="errors">
+    <div *ngIf="errors['required'] as err">
+        Required
+    </div>
+    <div *ngIf="errors['url'] as err">
+        Must begin with 'http://' or 'https://'
+    </div>
+    <div *ngIf="errors['words'] as err">
+        Required words count: {{err.actual}}/{{err.minimum}}
+    </div>
+</div>

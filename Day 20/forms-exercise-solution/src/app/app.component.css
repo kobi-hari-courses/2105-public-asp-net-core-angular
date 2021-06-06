@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+label {
+    font-size: 12px;
+}
+
+input, textarea {
+    outline: 0px transparent;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
