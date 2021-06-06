@@ -68,9 +68,11 @@ and also - through `Whatsapp`
 - [Project 3: Angular Pop Quiz](https://github.com/kobi2294/Course-2105-Public/wiki/Project-3-Pop-Quiz-in-Angular)
     * [Project 3 Helper Video](https://www.dropbox.com/s/8ybqibl7geul9bm/Solution.mp4?dl=0)
     * [Project 3 Presentation](https://www.dropbox.com/s/rkhx8ge3lj5um6t/Description.pptx?dl=0)
-- [Project 4: Reactive Pop Quiz]()
+- Project 4: Reactive Pop Quiz
     * [Project 4 Presentation](https://www.dropbox.com/s/n9pawcvycxv03sx/Description.pptx?dl=0)
     * [Project 4 Helper Video](https://www.dropbox.com/s/eba2hohp9z7fzkh/Solution.mp4?dl=0)
+- Final Project
+    * [Description PDF](https://github.com/kobi2294/Course-2105-Public/blob/main/Resources/Final%20Project/Project.pdf)
 
 
 ## Extra Links
